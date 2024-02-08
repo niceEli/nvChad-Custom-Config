@@ -70,7 +70,8 @@ local plugins = {
   { import = "nvcommunity.git.lazygit" },
   { import = "nvcommunity.editor.autosave" },
   { import = "nvcommunity.editor.satellite" },
-  { import = "nvcommunity.editor.illuminate" }
+  { import = "nvcommunity.editor.illuminate" },
+  { import = "nvcommunity.tools.telescope-fzf-native" }
 }
 
 return plugins
