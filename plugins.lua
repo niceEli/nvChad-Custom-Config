@@ -47,7 +47,7 @@ local plugins = {
     end,
   },
 
-  {"zane-/cder.nvim", lazy = false}
+  {"zane-/cder.nvim", lazy = false},
 
   -- To make a plugin not be loaded
   -- {
@@ -62,6 +62,15 @@ local plugins = {
   --   "mg979/vim-visual-multi",
   --   lazy = false,
   -- }
+
+  -- These Are nvcommunity Plugins
+  "NvChad/nvcommunity",
+  { import = "nvcommunity.git.diffview" },
+  { import = "nvcommunity.git.neogit" },
+  { import = "nvcommunity.git.lazygit" },
+  { import = "nvcommunity.editor.autosave" },
+  { import = "nvcommunity.editor.satellite" },
+  { import = "nvcommunity.editor.illuminate" }
 }
 
 return plugins
