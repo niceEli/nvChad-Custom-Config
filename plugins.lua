@@ -47,6 +47,19 @@ local plugins = {
     end,
   },
 
+  {
+    "Exafunction/codeium.nvim",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+      "hrsh7th/nvim-cmp",
+    },
+    config = function()
+      require("codeium").setup({
+      })
+    end,
+    lazy=false 
+  },
+
   {"zane-/cder.nvim", lazy = false},
 
   -- To make a plugin not be loaded
@@ -71,7 +84,7 @@ local plugins = {
   { import = "nvcommunity.editor.autosave" },
   { import = "nvcommunity.editor.satellite" },
   { import = "nvcommunity.editor.illuminate" },
-  { import = "nvcommunity.tools.telescope-fzf-native" }
+  { import = "nvcommunity.tools.telescope-fzf-native" },
 }
 
 return plugins
